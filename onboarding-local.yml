@@ -1,9 +1,9 @@
 spring:
   datasource:
     ucp:
-      url: jdbc:oracle:thin:@localhost:1555/xe
-      username: c##einvoicinguser
-      password: einvoicingPass
+      url: "{cipher}3fa729d9ff3321bc3a248a9aa9f354915fbdcfdfbb9878cc6c641ee631086a9ec7c27b0dd3ed98f95a2dfaf18d5647ad93be00f3bfad0908476067a93f52d986"
+      username: "{cipher}44c605fa2f54f8dd8ec19e7f1bfbe11a3ec8ada592420e9808d36fd1eb4560b7e4456cd940bfc7eca16736b8e5eb7493"
+      password: "{cipher}432fb32e3cac58c8fad56a129f5363a8870b0ba11592195d1b34366b1670803d"
       connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
       connectionWaitTimeout: 10
       inactiveConnectionTimeout: 10
