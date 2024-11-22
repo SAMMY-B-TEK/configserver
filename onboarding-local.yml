@@ -1,5 +1,63 @@
 spring:
+  activate:
+    on-profile: local
   datasource:
     ucp:
-      url: jdbc:oracle:thin:@localhost:1555/xe
-      
+      url: ${spring.datasource.ucp.url}
+      username: c##einvoicinguser
+      password: einvoicingPass
+      connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
+      connectionWaitTimeout: 10
+      inactiveConnectionTimeout: 10
+      initialPoolSize: 10
+      minPoolSize: 5
+      maxPoolSize: 10
+      validateConnectionOnBorrow: true
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle12cDialect
+        format_sql: false
+        cache:
+          use_second_level_cache: true
+          use_query_cache: true
+          region:
+            factory_class: org.hibernate.cache.jcache.JCacheRegionFactory
+  liquibase:
+    enabled: false
+
+cors:
+  allowed:
+    origins: '*'
+    methods: 'POST,GET,PUT,DELETE'
+    headers: '*'
+  exposed:
+    headers: '*'
+
+user:
+  service:
+    url: http://localhost:8082/users/auth/login
+    password:
+      hashing:
+        algorithm: PBKDF2WithHmacSHA1
+        salt: SALT
+
+istd:
+  service:
+    url: https://drapi-gateway.g2b.gsb.gov.jo:9443/porg-gsb/g2b-catalog/ISTDInfoSrv
+    username: ISTD_G2B
+    password: P@ss#@12Sg2b
+    ibm:
+      client:
+        id: 814e2a9b44a6f50fe024badc9b82e63f
+        secret: fc1b8cc49f951cdabc18c1cdba3eeeea
+
+
+q:
+  decryption:
+    key: I$TDJ019OO#
