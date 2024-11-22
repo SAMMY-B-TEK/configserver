@@ -3,7 +3,7 @@ spring:
     ucp:
       url: jdbc:oracle:thin:@localhost:1555/xe
       username: c##einvoicinguser
-      password: einvoicingPass
+      # password: einvoicingPass
       connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
       connectionWaitTimeout: 10
       inactiveConnectionTimeout: 10
