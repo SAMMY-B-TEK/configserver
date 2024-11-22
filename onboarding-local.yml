@@ -1,11 +1,13 @@
 spring:
   datasource:
-    ucp: {url: '{cipher}3fa729d9ff3321bc3a248a9aa9f354915fbdcfdfbb9878cc6c641ee631086a9ec7c27b0dd3ed98f95a2dfaf18d5647ad93be00f3bfad0908476067a93f52d986',
-      username: '{cipher}d4b660ee9cf183e887db7c0e96487bf12363312c6fc300edf656032cee9541120d07f607ea526931f4533949b9e9fb36',
-      password: '{cipher}08d734a0e5053a1b2363567cb28c0b3ff85ab6395a466cb200e9af52e95f4e68',
-      connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource, connectionWaitTimeout: 10,
-      inactiveConnectionTimeout: 10, initialPoolSize: 10, minPoolSize: 5, maxPoolSize: 10,
-      validateConnectionOnBorrow: true}
-spring.datasource.ucp: {password: '{cipher}d7b581ad02290d902db171b5f8d79a6b76d8bfd2d2831cd875b5f2fa2f447902d51a5ee00b400252bc665a7f9792b12a',
-  url: '{cipher}a507cd8c3c8f91e9c056afb68a9ec365094402392807a3ec35c6ca817560a735223b6ab57d424dc38396baf9ba8b6bf6a63d0fe7017162a990d68226be4924e1',
-  username: '{cipher}5acd653264d0abfdda1f550c67c538b7026301b2adf23c55c4e37fba7790aba82a4ca18ae1fe8d764189c07596c187c7'}
+    ucp:
+      url: "{cipher}3fa729d9ff3321bc3a248a9aa9f354915fbdcfdfbb9878cc6c641ee631086a9ec7c27b0dd3ed98f95a2dfaf18d5647ad93be00f3bfad0908476067a93f52d986"
+      username: "{cipher}d4b660ee9cf183e887db7c0e96487bf12363312c6fc300edf656032cee9541120d07f607ea526931f4533949b9e9fb36"
+      password: "{cipher}08d734a0e5053a1b2363567cb28c0b3ff85ab6395a466cb200e9af52e95f4e68"
+      connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
+      connectionWaitTimeout: 10
+      inactiveConnectionTimeout: 10
+      initialPoolSize: 10
+      minPoolSize: 5
+      maxPoolSize: 10
+      validateConnectionOnBorrow: true
