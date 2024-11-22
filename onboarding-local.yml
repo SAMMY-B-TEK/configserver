@@ -2,3 +2,12 @@ spring:
   datasource:
     ucp:
       url: jdbc:oracle:thin:@localhost:1555/xe
+      username: c##einvoicinguser
+      password: einvoicingPass
+      connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
+      connectionWaitTimeout: 10
+      inactiveConnectionTimeout: 10
+      initialPoolSize: 10
+      minPoolSize: 5
+      maxPoolSize: 10
+      validateConnectionOnBorrow: true
