@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    ucp:
+      url: jdbc:oracle:thin:@localhost:1555/xe
+      
