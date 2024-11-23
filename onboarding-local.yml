@@ -1,9 +1,9 @@
 spring:
   datasource:
     ucp:
-      url: '{cipher}82ae099f64ecece2dd401e9b92ffdf6aacb65ec7a8330fbfc9db1b329141e87724e5921bc59b5a7cd33968929859e335078b8460843fd903296aa126d85795f4'
-      username: '{cipher}4381fad3a169f846f02ecd17642d5279396f0f890184725f889252fa2860060820dfd8dcc473730d11d75c104942b38d'
-      password: '{cipher}3cf697947cb44c86f6c0f5e3141df700f26bbd6a7e81a4c73fb0f8f18ab37c29'
+      url: '{cipher}03787fae814a4539f38a21c4d380c656ad6837beef80e0d963901f57bd5b9ba920ff0905af9d0ab2ca0a0c028b726b837e510935ce9df9a5b39e67ee43968745'
+      username: '{cipher}667657a210d123baa02c5419d3be1e19669d5282f488a6afb2a8520d11e93eaaaaa661b791b8e4f2624743c0724203bf'
+      password: '{cipher}17c96a58ca4b39416e82aafed8cd98ed9155d960e33fe821e1f075098a9d9db9'
       connectionFactoryClassName: oracle.jdbc.pool.OracleDataSource
       connectionWaitTimeout: 10
       inactiveConnectionTimeout: 10
